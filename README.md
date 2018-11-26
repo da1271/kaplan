@@ -10,6 +10,8 @@ Run `node server.js` in server directory to start the Node server
 
 Run `ng serve` in root directory to start the client server
 
+Open browser to `localhost:4200`
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
