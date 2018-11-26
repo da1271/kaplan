@@ -1,11 +1,6 @@
-<ul>
-  <li *ngFor="let class of newArray | groupByDate:'date'">{{class.key}}
-    <ul>
-      <li *ngFor="let classs of class.value">
-              {{classs.classes.title}}
-              {{classs.classes.description}}
-              {{classs.time}}
-      </li>
-    </ul>
-  </li>
-</ul>
+<!-- passes the list of classes into class list component -->
+<section class="classApp">
+  <app-class-list
+    [classes]="newArray"
+  ></app-class-list>
+</section>

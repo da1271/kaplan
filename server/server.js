@@ -7,7 +7,6 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-
 app.get(`/classes`, (req, res) => {
   res.status(200).send({
     success: 'true',

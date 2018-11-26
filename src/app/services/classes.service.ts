@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { IClass } from './class'
+import { IClass } from '../class'
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -12,7 +12,8 @@ export class ClassesService {
 
   constructor(private http: HttpClient) { }
 
-  getClasses(): Observable<IClass[]> {
+  getClasses(): Observable<IClass[]> {                                            //request to server
         return this.http.get<IClass[]>(this.url);
     }
+
 }

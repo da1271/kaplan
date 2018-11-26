@@ -1,3 +1,11 @@
-<p>
-  class-list works!
-</p>
+<section class="class-listing" *ngIf="classes.length > 0">
+  <ul>
+    <li *ngFor="let class of classes | groupByDate:'date'">
+      <app-class-list-item
+        [class]="class">
+      </app-class-list-item>
+    </li>
+  </ul>
+</section>
+
+<!-- passes each individual class into class-list-item -->

@@ -1,3 +1,17 @@
-<p>
-  class-list-item works!
-</p>
+<div class="grouped-class-list-items">
+  <h3>{{class.key | date:'fullDate'}}</h3>
+    <ul>
+      <li *ngFor="let value of class.value">
+        <div class="class-list-item" (click)="openDialog(value)">
+          <div><img [src]="value.classes.subjectPhotoUrl" [alt]="value.classes.title"></div>
+          <div>{{value.classes.title}}</div>
+          <div><img [src]="value.classes.instructorPhotoUrl" [alt]="value.classes.instructorName"></div>
+          <div>{{value.classes.instructorName}}</div>
+          <div>{{value.classes.description}}</div>
+          <div>{{value.classes.time | date:'shortTime'}}</div>
+        </div>
+      </li>
+    </ul>
+</div>
+
+<!-- passes value into openDialog() -->

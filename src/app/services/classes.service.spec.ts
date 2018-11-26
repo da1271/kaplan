@@ -10,3 +10,11 @@ describe('ClassesService', () => {
     expect(service).toBeTruthy();
   });
 });
+
+// TestBed.configureTestingModule({
+//   imports: [HttpModule],
+//   providers: [
+//     { provide: HttpClient, useValue: 'http://localhost:3000/api/register' },
+//     AuthService,
+//     { provide: XHRBackend, useClass: MockBackend },
+//   ]

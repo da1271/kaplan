@@ -1,0 +1,26 @@
+.grouped-class-list-items{
+  margin: 0 auto;
+  padding: 2px;
+  width: 1200px;
+}
+.class-list-item{
+  cursor: pointer;
+  margin-top: 2px;
+  padding: 2px;
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: 6% 15% 6% 10% 54% 7%;
+  grid-column-gap: 1px;
+  width: 1050px;
+  background: #eee;
+}
+.class-list-item:hover{
+  background: #6e6e6e;
+}
+.class-list-item div{
+  align-self: center;
+  padding: 2px;
+}
+.grouped-class-list-items ul{
+  list-style: none;
+}

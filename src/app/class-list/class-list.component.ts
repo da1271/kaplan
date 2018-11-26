@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { IClass } from '../class'
 
 @Component({
   selector: 'app-class-list',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./class-list.component.css']
 })
 export class ClassListComponent implements OnInit {
+
+  @Input()
+  classes: IClass[];
 
   constructor() { }
 

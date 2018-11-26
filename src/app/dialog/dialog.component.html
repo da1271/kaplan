@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>{{data.title}}</h1>
+<div mat-dialog-content>
+  <p>{{data.description}}</p>
+  <p>{{data.instructorName}}</p>
+  <p>{{data.date | date:'fullDate'}}</p>
+  <p>{{data.time | date:'shortTime'}}</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Close</button>
+</div>

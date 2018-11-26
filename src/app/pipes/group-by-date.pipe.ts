@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
-
+// pipe that groups by date 
 @Pipe({name: 'groupByDate'})
 export class GroupByDatePipe implements PipeTransform {
     transform(collection: Array<any>, property: string): Array<any> {
