@@ -26,7 +26,7 @@ export class AppComponent implements OnInit{
              date: this.classes[_i].time.substring(0, 10),                        // eg. 11-22-2016
              time: this.classes[_i].time.substring(11, 19)                        // eg. 22:00:00
             });
-          } 
+          } console.log(data)
         })
   }
 

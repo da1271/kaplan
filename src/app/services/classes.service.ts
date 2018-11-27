@@ -17,3 +17,8 @@ export class ClassesService {
     }
 
 }
+
+export interface ClassesResponse {
+  success: boolean,
+  classes: IClass[]
+}
